@@ -6,7 +6,7 @@ fs.readFile('aaa.txt',function (err,data) {
         console.log(data.toString());
     }
 });
-fs.writeFile('aaa.tex','向文件写内容',function (err) {
+fs.writeFile('aaa.txt','向文件写内容',function (err) {
     if (err){
         console.log('写文件失败')
     }
