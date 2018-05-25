@@ -1,8 +1,9 @@
 1.get数据解析：querystring:
                 const query=require('querystring');
-                const json=query.parse("user=lisi&pass=12345&age=18",true);
+                const json=query.parse("user=lisi&pass=12345&age=18");
               url:
                 const urlLib=require('url');
-                var obj=urlLib.parse('http:www.fs.com?user=lisi&age=18&sex=男');
+                var obj=ulrLib.parse(request.url,true);
                 var get=obj.pathname;
                 var data=obj.query;
+2.post数据解析：
