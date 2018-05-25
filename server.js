@@ -1,5 +1,5 @@
-var http=require('http');
-var server=http.createServer(function (request,response) {
+const http=require('http');
+const server=http.createServer(function (request,response) {
     response.write('abc');
     console.log(request.url);
     switch (request.url){
