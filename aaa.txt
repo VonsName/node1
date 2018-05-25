@@ -1,1 +1,8 @@
-向文件写内容
+1.get数据解析：querystring:
+                const query=require('querystring');
+                const json=query.parse("user=lisi&pass=12345&age=18",true);
+              url:
+                const urlLib=require('url');
+                var obj=urlLib.parse('http:www.fs.com?user=lisi&age=18&sex=男');
+                var get=obj.pathname;
+                var data=obj.query;
