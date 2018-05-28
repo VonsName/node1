@@ -10,13 +10,15 @@ const app=ht.createServer(function (req,res) {
     var data='';
     req.on('data',function (str1) {
         data+=str1;
-        fs.readFile('D:/nodeStudy/node1/bbb.txt',function (err,data) {
+        /*fs.readFile('D:/nodeStudy/node1/bbb.txt',function (err,data) {
             if (err){
                 console.log('读取失败');
             } else {
                 console.log(data.toString());
             }
-        });
+        });*/
+        var fileName=fs.readFile(req.url);
+        res.write(fileName);
         res.end();
     });
 
