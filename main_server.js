@@ -16,7 +16,8 @@ const app=ht.createServer(function (req,res) {
             } else {
                 console.log(data.toString());
             }
-        })
+        });
+        res.end();
     });
 
     req.on('end',function () {
